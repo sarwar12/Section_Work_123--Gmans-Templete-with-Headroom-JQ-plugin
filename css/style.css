@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: 'Muli', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+/*== OffCanvas Menu Area start ==*/
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  right: -40%;
+  height: 100%;
+  width: 40%;
+  z-index: 99;
+  background-color: #fff;
+  padding: 40px;
+  transition:.4s;
+}
+	/* menu active with js start */
+.offcanvas-menu.active{
+	right: 0;
+}
+	/* menu active with js start */
+.menu-bottom-area {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+  max-width: 330px;
+}
+.offcanvas-box-text {
+  background-color: #e5e3ec;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px;
+}
+.social-icon a {
+  font-size: 25px;
+  color: #b6b3c1;
+  display: inline-block;
+  padding-right: 10px;
+}
+.social-icon {
+  margin-top: 20px;
+}
+.offcanvas-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 18px;
+}
+.offcanvas-menu ul li a {
+  color: #100060;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.6;
+}
+	/* Table & TableCell CSS */
+.offcanves-menu-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.offcanvas-menu-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 210px;
+}
+	/* Close Button CSS */
+.menu-close {
+  position: absolute;
+  right: 0;
+  width: 70px;
+  border-left: 1px solid #e4e4e4;
+  height: 100%;
+  top: 0;
+}
+.menu-close i {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  line-height: 40px;
+  font-size: 35px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+	/* OffCanvas Overlay */
+.offcanvas-menu-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #000;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+}
+.offcanvas-menu-overlay.active{
+	opacity: .2;
+	visibility: visible;
+}
+/*== OffCanvas Menu Area stop ==*/
+
+
+/*== Header Area start ==*/
+.header-area {
+  padding: 40px 30px;
+}
+.logo a {
+  color: #000;
+}
+.logo h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+.logo h1 span {
+  font-size: 8px;
+  position: absolute;
+  right: -14px;
+  top: 3px;
+}
+	/* Menu Trigger CSS */
+.menu-trigger span {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  transition: .3s;
+}
+.menu-trigger span:nth-child(2) {
+  margin: 7px 0;
+}
+.menu-trigger {
+  display: inline-block;
+  width: 30px;
+}
+.mainmenu {
+  text-align: right;
+}
+	/* Absolute Menu CSS */
+.header-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.menu-trigger:hover span:nth-child(1), .menu-trigger:hover span:nth-child(3) {
+  margin: 0 5px;
+}
+	/* menu fixed with Headroom js css */
+.header-area.headroom--pinned {
+	position: fixed;
+}
+/*== Header Area stop ==*/
+/*== portfolio Area start ==*/
+.portfolio-bg-1{background-image: url(../img/bg-1.jpg);}
+.portfolio-bg-2{background-image: url(../img/bg-2.jpg);}
+.portfolio-bg-3{background-image: url(../img/bg-3.png);}
+.portfolio-bg-4{background-image: url(../img/bg-4.png);}
+.portfolio-bg-5{background-image: url(../img/bg-5.jpg);}
+.portfolio-bg-6{background-image: url(../img/bg-6.jpg);}
+.portfolio-bg-7{background-image: url(../img/bg-7.jpg);}
+.portfolio-bg-8{background-image: url(../img/bg-8.png);}
+.portfolio-bg-9{background-image: url(../img/bg-9.jpg);}
+.portfolio-bg-10{background-image: url(../img/bg-10.jpg);}
+.portfolio-bg-11{background-image: url(../img/bg-11.jpg);}
+.portfolio-area {
+  overflow: hidden;
+  background-color: #fff;
+}
+.single-portfolio-link {
+  float: left;
+  width: 25%;
+  height: 330px;
+  background-size: 100%;
+  background-position: center;
+  background-color: #ddd;
+  display: table;
+  transition: .5s;
+}
+.portfolio-hover {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+}
+.portfolio-hover a {
+  color: #000;
+}
+.portfolio-hover h2 {
+  font-size: 24px;
+}
+.portfolio-hover p {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: .5;
+}
+.portfolio-hover p:hover {
+  opacity: 1;
+}
+.single-portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+  visibility: visible;
+}
+.single-portfolio-link:hover {
+  background-size: 120%;
+}
+	/* Masonry CSS */
+.single-portfolio-link.long {
+  height: 660px;
+}
+.single-portfolio-link.boxed {
+  height: 660px;
+  width: 50%;
+}
+/*== portfolio Area stop ==*/
+/*== footer Area Start ==*/
+.footer-area {
+  background: #613ad6;
+  font-size: 18px;
+  line-height: 2;
+  padding: 80px 0;
+}
+.footer-area, .footer-area a {
+  color: #fff;
+}
+.footer-area a {
+  opacity: 0.8;
+}
+.footer-area h2 a {
+  opacity: 1;
+}
+.footer-area p {
+  opacity: .8;
+}
+.footer-logo {
+  font-size: 22px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+.footer-logo span {
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  font-size: 8px;
+}
+.footer-logo h2 {
+  font-size: 22px;
+}
+.address-info h2 {
+  font-size: 16px;
+}
+.social-menu ul, .graphic-menu ul {
+  margin: 0;
+  list-style: none;
+}
+	/* fixed Footer Code */
+.footer-area {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.portfolio-area {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 304px;
+}
+/*== footer Area stop ==*/

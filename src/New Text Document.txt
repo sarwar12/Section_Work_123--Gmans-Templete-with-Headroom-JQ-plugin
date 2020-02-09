@@ -1,0 +1,29 @@
+### Masonry JQ Plugin:
+	https://masonry.desandro.com/
+
+
+### Animate CSS JQ Plugin:
+	https://daneden.github.io/animate.css/
+
+
+### Headroom JQ Plugin: (Its Use Fixed Header menu option)
+	https://wicky.nillia.ms/headroom.js/
+
+   Include two File:
+   ===============
+	1) headroom.min.js
+	2) jQuery.headroom.js ( With github folder and find this file )
+
+    Include Js:
+    ============
+	$(".header-area").headroom();
+
+   Include Css:
+   ===========
+	.header-area.headroom--pinned {
+	position: fixed;
+		}
+
+  Init JS:
+  =====
+	$(".header-area").headroom();
